@@ -1,0 +1,356 @@
+﻿<Window x:Class="GALADARBS4.Spele1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GALADARBS4"
+        mc:Ignorable="d"
+        Title="Casino Slot" Height="550" Width="1100" MaxHeight="550" MaxWidth="1100">
+    <Window.Background>
+        <ImageBrush ImageSource="Bildes1\background.jpg"></ImageBrush>
+    </Window.Background>
+    <Grid Margin="0,0,2,0.4">
+        <Grid Margin="100,10,100,100">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5*"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Border BorderThickness="4" CornerRadius="30" BorderBrush="Black" ClipToBounds="True" Margin="0,0,0,0" Grid.RowSpan="2">
+                <Border.Background>
+                    <SolidColorBrush x:Name="CanvasBackgroundBrush" Color="LightBlue"></SolidColorBrush>
+                </Border.Background>
+                <Border Width="100" Margin="21,221,461,80"/>
+            </Border>
+            <Canvas ClipToBounds="True" Margin="0,10,0,11">
+                <StackPanel Height="310" Name="stackPanel1" Width="580">
+                    <Grid>
+                        <Image Source="Bildes1\1.png" HorizontalAlignment="Left" Height="140" Margin="0,186,0,0" VerticalAlignment="Top" Width="140" x:Name="box111"/>
+                        <Border Name="b1" BorderThickness="3" Grid.Row="0"
+                            CornerRadius="20" BorderBrush="Black" Margin="21,-0,460,236" Height="100" Width="100"/>
+                        <Border x:Name="b9" Width="100" Margin="21,200,459,36" BorderThickness="3" CornerRadius="20" BorderBrush="black"/>
+                        <Image Source="Bildes1\2.png" HorizontalAlignment="Left" Height="140" Margin="150,186,0,0" VerticalAlignment="Top" Width="140" x:Name="box222"/>
+                        <Border Name="b10" BorderThickness="3" BorderBrush="Black" Width="100" Height="100" Margin="170,200,310,36" CornerRadius="20"/>
+                        <Border Name="b11" BorderThickness="3" BorderBrush="Black" Width="100" Height="100" Margin="320,200,160,36" CornerRadius="20"/>
+                        <Image Source="Bildes1\3.png" HorizontalAlignment="Left" Height="140" Margin="450,186,-10,0" VerticalAlignment="Top" Width="140" x:Name="box444"/>
+                        <Border Name="b12" Width="100" Margin="471,200,9,40" BorderBrush="Black" CornerRadius="20" BorderThickness="3"/>
+                        <Image Source="Bildes1\3.png" HorizontalAlignment="Left" Height="140" Margin="300,186,0,0" VerticalAlignment="Top" Width="140" x:Name="box333"/>
+                    </Grid>
+                    <Image Source="Bildes1\1.png" HorizontalAlignment="Left" Height="140" Margin="0,-250,0,-3.5" VerticalAlignment="Top" Width="140" x:Name="box11"/>
+                    <Border Name="b2" Height="100" Margin="171,-336,309,236" Width="100" BorderBrush="Black" CornerRadius="20" BorderThickness="3"/>
+                    <Image Source="Bildes1\1.png" HorizontalAlignment="Left" Height="140" Margin="0,-350,0,0" VerticalAlignment="Top" Width="140" x:Name="box1"/>
+                    <Border Name="b3" Height="100" Width="100" Margin="321,-336,159,236" BorderBrush="Black" BorderThickness="3" CornerRadius="20"/>
+                    <Border Name="b4" Height="100" Width="100" Margin="471,-336,9,236" BorderBrush="Black" BorderThickness="3" CornerRadius="20"></Border>
+                    <Image Source="Bildes1\2.png" HorizontalAlignment="Left" Height="140" Margin="150,-250,0,-3.5" VerticalAlignment="Top" Width="140" x:Name="box22"/>
+                    <Border Name="b5" Height="100" Width="100" Margin="21,-236,459,136" BorderBrush="Black" BorderThickness="3" CornerRadius="20"/>
+                    <Image Source="Bildes1\2.png" HorizontalAlignment="Left" Height="140" Margin="150,-350,0,-3.5" VerticalAlignment="Top" Width="140" x:Name="box2"/>
+                    <Border Name="b6" Height="100" Width="100" Margin="171,-236,309,136" BorderBrush="Black" BorderThickness="3" CornerRadius="20"/>
+                    <Border Name="b7" Height="100" Width="100" Margin="321,-236,159,140" BorderBrush="Black" BorderThickness="3" CornerRadius="20"/>
+                    <Image Source="Bildes1\3.png" HorizontalAlignment="Left" Height="140" Margin="300,-250,30,0" VerticalAlignment="Top" Width="140" x:Name="box33"/>
+                    <Border Name="b8" Height="100" Width="100" Margin="471,-240,9,139" BorderBrush="Black" BorderThickness="3" CornerRadius="20"/>
+                    <Image Source="Bildes1\3.png" HorizontalAlignment="Left" Height="140" Margin="300,-350,30,0" VerticalAlignment="Top" Width="140" x:Name="box3"/>
+                    <Image Source="Bildes1\4.png" HorizontalAlignment="Left" Height="140" Margin="450,-250,0,-8.5" VerticalAlignment="Top" Width="140" x:Name="box44"/>
+                    <Image Source="Bildes1\4.png" HorizontalAlignment="Left" Height="140" Margin="450,-350,0,-8.5" VerticalAlignment="Top" Width="140" x:Name="box4"/>
+                </StackPanel>
+            </Canvas>
+            <Label Content="Credits: 100" HorizontalAlignment="Left" Margin="10,314,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.776,-1.367" Width="135" FontSize="20" Name="one" FontWeight="Bold" Grid.RowSpan="2"/>
+            <Label Content="Bet: 5" HorizontalAlignment="Left" Margin="260,314,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.776,-1.367" FontSize="20" Width="90" Name="two" FontWeight="Bold" Grid.RowSpan="2"/>
+            <Label Content="Win:" Margin="460,314,311,0" VerticalAlignment="Top" RenderTransformOrigin="0.776,-1.367" FontSize="20" Name="three" FontWeight="Bold" Grid.RowSpan="2"/>
+            <Button Content="Spin" HorizontalAlignment="Left" Margin="340,59,0,-46" VerticalAlignment="Top" Width="180" Height="55" FontSize="30" FontWeight="Bold" Background="CadetBlue" Click="Button_Click" Grid.Row="1" Name="btn1">
+            </Button>
+
+        </Grid>
+        <Button Content="5" FontSize="18" FontWeight="ExtraBold" HorizontalAlignment="Left" Margin="285,365,0,0" VerticalAlignment="Top" Width="30"  Height="30"  Name="five" Click="five_Click"/>
+        <Button Content="10" FontSize="18" FontWeight="ExtraBold" HorizontalAlignment="Left" Margin="345,365,0,0" VerticalAlignment="Top" Width="30"  Height="30" Name="ten" Click="ten_Click"/>
+        <Button Content="20" FontSize="18" FontWeight="ExtraBold" HorizontalAlignment="Left" Margin="405,365,0,0" VerticalAlignment="Top" Width="30"  Height="30" Name="twenty" Click="twenty_Click"/>
+        <Button Content="40" FontSize="18" FontWeight="ExtraBold" HorizontalAlignment="Left" Margin="465,365,0,0" VerticalAlignment="Top" Width="30"  Height="30" Name="forty" Click="forty_Click"/>
+
+        <Grid Width="300" Margin="670, 0, 100, 100" Name="gr1" Visibility="Visible">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0,2*"/>
+                <ColumnDefinition Width="0,2*"/>
+                <ColumnDefinition Width="0,2*"/>
+                <ColumnDefinition Width="0,2*"/>
+                <ColumnDefinition Width="0,2*"/>
+                <ColumnDefinition Width="0,3*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0,2*"/>
+                <RowDefinition Height="0,2*"/>
+                <RowDefinition Height="0,2*"/>
+                <RowDefinition Height="0,2*"/>
+                <RowDefinition Height="0,2*"/>
+                <RowDefinition Height="0,2*"/>
+                <RowDefinition Height="0,2*"/>
+                <RowDefinition Height="0,2*"/>
+                <RowDefinition Height="0,2*"/>
+            </Grid.RowDefinitions>
+            <Image Source="Bildes1\4.png"/>
+            <Image Source="Bildes1\4.png" Grid.Column="1"/>
+            <TextBlock Text="=" Grid.Column="2" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+            <Image Source="Bildes1\1.png" Grid.Row="1" VerticalAlignment="Bottom" Width="43" Grid.RowSpan="2"/>
+            <Image Source="Bildes1\1.png" Grid.Row="1" Grid.Column="1" VerticalAlignment="Bottom" Width="43" Grid.RowSpan="2"/>
+            <Image Source="Bildes1\1.png" Grid.Row="1" Grid.Column="2" VerticalAlignment="Bottom" Width="43" Grid.RowSpan="2"/>
+            <Image Source="Bildes1\3.png" Grid.Row="1" VerticalAlignment="Top" Width="43" Grid.RowSpan="2"/>
+            <Image Source="Bildes1\3.png" Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" Width="43" Grid.RowSpan="2"/>
+            <Image Source="Bildes1\3.png" Grid.Row="1" Grid.Column="2" VerticalAlignment="Top" Width="43" Grid.RowSpan="2"/>
+            <TextBlock Text="=" Grid.Column="3" Grid.Row="1" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.RowSpan="2"/>
+            <TextBlock Text="10" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="3"/>
+            <TextBlock Text="20" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="4" Grid.Row="1" Grid.RowSpan="2"/>
+
+            <Image Source="Bildes1\2.png" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center"/>
+            <Image Source="Bildes1\2.png" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" />
+            <Image Source="Bildes1\2.png" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center"/>
+
+            <Image Source="Bildes1\4.png" Grid.Column="0" Grid.Row="4"/>
+            <Image Source="Bildes1\4.png" Grid.Column="1" Grid.Row="4"/>
+            <Image Source="Bildes1\4.png" Grid.Column="2" Grid.Row="4"/>
+            <TextBlock Text="=" Grid.Column="3" Grid.Row="4" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Text="50" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="4" Grid.Row="4"/>
+
+            <Image Source="Bildes1\1.png" Grid.Column="0" Grid.Row="5" VerticalAlignment="Bottom" Width="43" Grid.RowSpan="2"/>
+            <Image Source="Bildes1\1.png" Grid.Column="1" Grid.Row="5" VerticalAlignment="Bottom" Width="43" Grid.RowSpan="2"/>
+            <Image Source="Bildes1\1.png" Grid.Column="2" Grid.Row="5" VerticalAlignment="Bottom" Width="43" Grid.RowSpan="2"/>
+            <Image Source="Bildes1\1.png" Grid.Column="3" Grid.Row="5" VerticalAlignment="Bottom" Width="43" Grid.RowSpan="2"/>
+            <Image Source="Bildes1\3.png" Grid.Column="0" Grid.Row="5" VerticalAlignment="Top" Width="43"/>
+            <Image Source="Bildes1\3.png" Grid.Column="1" Grid.Row="5" VerticalAlignment="Top" Width="43"/>
+            <Image Source="Bildes1\3.png" Grid.Column="2" Grid.Row="5" VerticalAlignment="Top" Width="43"/>
+            <Image Source="Bildes1\3.png" Grid.Column="3" Grid.Row="5" VerticalAlignment="Top" Width="43"/>
+            <TextBlock Text="=" Grid.Column="3" Grid.Row="3" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Text="120" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="5" Grid.Row="7"/>
+            <TextBlock Text="=" Grid.Column="4" Grid.Row="7" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Text="40" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="4" Grid.Row="3"/>
+            <TextBlock Text="=" Grid.Column="4" Grid.Row="5" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.RowSpan="2"/>
+            <TextBlock Text="90" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="5" Grid.Row="5" Grid.RowSpan="2"/>
+
+            <Image Source="Bildes1\2.png" Grid.Row="7" Grid.Column="0" />
+            <Image Source="Bildes1\2.png" Grid.Row="7" Grid.Column="1" />
+            <Image Source="Bildes1\2.png" Grid.Row="7" Grid.Column="2" />
+            <Image Source="Bildes1\2.png" Grid.Row="7" Grid.Column="3" />
+
+            <Image Source="Bildes1\4.png" Grid.Column="0" Grid.Row="8"/>
+            <Image Source="Bildes1\4.png" Grid.Column="1" Grid.Row="8"/>
+            <Image Source="Bildes1\4.png" Grid.Column="2" Grid.Row="8"/>
+            <Image Source="Bildes1\4.png" Grid.Column="3" Grid.Row="8"/>
+            <TextBlock Text="=" Grid.Column="4" Grid.Row="8" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Text="140" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="5" Grid.Row="8"/>
+        </Grid>
+        <Grid Width="300" Margin="670, 0, 100, 100" Name="gr2" Visibility="Hidden">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0,2*"/>
+                <ColumnDefinition Width="0,2*"/>
+                <ColumnDefinition Width="0,2*"/>
+                <ColumnDefinition Width="0,2*"/>
+                <ColumnDefinition Width="0,2*"/>
+                <ColumnDefinition Width="0,3*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0,2*"/>
+                <RowDefinition Height="0,2*"/>
+                <RowDefinition Height="0,2*"/>
+                <RowDefinition Height="0,2*"/>
+                <RowDefinition Height="0,2*"/>
+                <RowDefinition Height="0,2*"/>
+                <RowDefinition Height="0,2*"/>
+                <RowDefinition Height="0,2*"/>
+                <RowDefinition Height="0,2*"/>
+            </Grid.RowDefinitions>
+            <Image Source="Bildes1\4.png"/>
+            <Image Source="Bildes1\4.png" Grid.Column="1"/>
+            <TextBlock Text="=" Grid.Column="2" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+            <Image Source="Bildes1\1.png" Grid.Row="1" VerticalAlignment="Bottom" Width="43" Grid.RowSpan="2"/>
+            <Image Source="Bildes1\1.png" Grid.Row="1" Grid.Column="1" VerticalAlignment="Bottom" Width="43" Grid.RowSpan="2"/>
+            <Image Source="Bildes1\1.png" Grid.Row="1" Grid.Column="2" VerticalAlignment="Bottom" Width="43" Grid.RowSpan="2"/>
+            <Image Source="Bildes1\3.png" Grid.Row="1" VerticalAlignment="Top" Width="43" Grid.RowSpan="2"/>
+            <Image Source="Bildes1\3.png" Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" Width="43" Grid.RowSpan="2"/>
+            <Image Source="Bildes1\3.png" Grid.Row="1" Grid.Column="2" VerticalAlignment="Top" Width="43" Grid.RowSpan="2"/>
+            <TextBlock Text="=" Grid.Column="3" Grid.Row="1" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.RowSpan="2"/>
+            <TextBlock Text="20" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="3"/>
+            <TextBlock Text="40" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="4" Grid.Row="1" Grid.RowSpan="2"/>
+
+            <Image Source="Bildes1\2.png" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center"/>
+            <Image Source="Bildes1\2.png" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" />
+            <Image Source="Bildes1\2.png" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center"/>
+
+            <Image Source="Bildes1\4.png" Grid.Column="0" Grid.Row="4"/>
+            <Image Source="Bildes1\4.png" Grid.Column="1" Grid.Row="4"/>
+            <Image Source="Bildes1\4.png" Grid.Column="2" Grid.Row="4"/>
+            <TextBlock Text="=" Grid.Column="3" Grid.Row="4" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Text="100" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="4" Grid.Row="4"/>
+
+            <Image Source="Bildes1\1.png" Grid.Column="0" Grid.Row="5" VerticalAlignment="Bottom" Width="43" Grid.RowSpan="2"/>
+            <Image Source="Bildes1\1.png" Grid.Column="1" Grid.Row="5" VerticalAlignment="Bottom" Width="43" Grid.RowSpan="2"/>
+            <Image Source="Bildes1\1.png" Grid.Column="2" Grid.Row="5" VerticalAlignment="Bottom" Width="43" Grid.RowSpan="2"/>
+            <Image Source="Bildes1\1.png" Grid.Column="3" Grid.Row="5" VerticalAlignment="Bottom" Width="43" Grid.RowSpan="2"/>
+            <Image Source="Bildes1\3.png" Grid.Column="0" Grid.Row="5" VerticalAlignment="Top" Width="43"/>
+            <Image Source="Bildes1\3.png" Grid.Column="1" Grid.Row="5" VerticalAlignment="Top" Width="43"/>
+            <Image Source="Bildes1\3.png" Grid.Column="2" Grid.Row="5" VerticalAlignment="Top" Width="43"/>
+            <Image Source="Bildes1\3.png" Grid.Column="3" Grid.Row="5" VerticalAlignment="Top" Width="43"/>
+            <TextBlock Text="=" Grid.Column="3" Grid.Row="3" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Text="240" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="5" Grid.Row="7"/>
+            <TextBlock Text="=" Grid.Column="4" Grid.Row="7" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Text="80" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="4" Grid.Row="3"/>
+            <TextBlock Text="=" Grid.Column="4" Grid.Row="5" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.RowSpan="2"/>
+            <TextBlock Text="180" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="5" Grid.Row="5" Grid.RowSpan="2"/>
+
+            <Image Source="Bildes1\2.png" Grid.Row="7" Grid.Column="0" />
+            <Image Source="Bildes1\2.png" Grid.Row="7" Grid.Column="1" />
+            <Image Source="Bildes1\2.png" Grid.Row="7" Grid.Column="2" />
+            <Image Source="Bildes1\2.png" Grid.Row="7" Grid.Column="3" />
+
+            <Image Source="Bildes1\4.png" Grid.Column="0" Grid.Row="8"/>
+            <Image Source="Bildes1\4.png" Grid.Column="1" Grid.Row="8"/>
+            <Image Source="Bildes1\4.png" Grid.Column="2" Grid.Row="8"/>
+            <Image Source="Bildes1\4.png" Grid.Column="3" Grid.Row="8"/>
+            <TextBlock Text="=" Grid.Column="4" Grid.Row="8" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Text="280" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="5" Grid.Row="8"/>
+        </Grid>
+
+        <Grid Width="300" Margin="670, 0, 100, 100" Name="gr3" Visibility="Hidden">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0,2*"/>
+                <ColumnDefinition Width="0,2*"/>
+                <ColumnDefinition Width="0,2*"/>
+                <ColumnDefinition Width="0,2*"/>
+                <ColumnDefinition Width="0,2*"/>
+                <ColumnDefinition Width="0,3*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0,2*"/>
+                <RowDefinition Height="0,2*"/>
+                <RowDefinition Height="0,2*"/>
+                <RowDefinition Height="0,2*"/>
+                <RowDefinition Height="0,2*"/>
+                <RowDefinition Height="0,2*"/>
+                <RowDefinition Height="0,2*"/>
+                <RowDefinition Height="0,2*"/>
+                <RowDefinition Height="0,2*"/>
+            </Grid.RowDefinitions>
+            <Image Source="Bildes1\4.png"/>
+            <Image Source="Bildes1\4.png" Grid.Column="1"/>
+            <TextBlock Text="=" Grid.Column="2" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+            <Image Source="Bildes1\1.png" Grid.Row="1" VerticalAlignment="Bottom" Width="43" Grid.RowSpan="2"/>
+            <Image Source="Bildes1\1.png" Grid.Row="1" Grid.Column="1" VerticalAlignment="Bottom" Width="43" Grid.RowSpan="2"/>
+            <Image Source="Bildes1\1.png" Grid.Row="1" Grid.Column="2" VerticalAlignment="Bottom" Width="43" Grid.RowSpan="2"/>
+            <Image Source="Bildes1\3.png" Grid.Row="1" VerticalAlignment="Top" Width="43" Grid.RowSpan="2"/>
+            <Image Source="Bildes1\3.png" Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" Width="43" Grid.RowSpan="2"/>
+            <Image Source="Bildes1\3.png" Grid.Row="1" Grid.Column="2" VerticalAlignment="Top" Width="43" Grid.RowSpan="2"/>
+            <TextBlock Text="=" Grid.Column="3" Grid.Row="1" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.RowSpan="2"/>
+            <TextBlock Text="40" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="3"/>
+            <TextBlock Text="80" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="4" Grid.Row="1" Grid.RowSpan="2"/>
+
+            <Image Source="Bildes1\2.png" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center"/>
+            <Image Source="Bildes1\2.png" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" />
+            <Image Source="Bildes1\2.png" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center"/>
+
+            <Image Source="Bildes1\4.png" Grid.Column="0" Grid.Row="4"/>
+            <Image Source="Bildes1\4.png" Grid.Column="1" Grid.Row="4"/>
+            <Image Source="Bildes1\4.png" Grid.Column="2" Grid.Row="4"/>
+            <TextBlock Text="=" Grid.Column="3" Grid.Row="4" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Text="200" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="4" Grid.Row="4"/>
+
+            <Image Source="Bildes1\1.png" Grid.Column="0" Grid.Row="5" VerticalAlignment="Bottom" Width="43" Grid.RowSpan="2"/>
+            <Image Source="Bildes1\1.png" Grid.Column="1" Grid.Row="5" VerticalAlignment="Bottom" Width="43" Grid.RowSpan="2"/>
+            <Image Source="Bildes1\1.png" Grid.Column="2" Grid.Row="5" VerticalAlignment="Bottom" Width="43" Grid.RowSpan="2"/>
+            <Image Source="Bildes1\1.png" Grid.Column="3" Grid.Row="5" VerticalAlignment="Bottom" Width="43" Grid.RowSpan="2"/>
+            <Image Source="Bildes1\3.png" Grid.Column="0" Grid.Row="5" VerticalAlignment="Top" Width="43"/>
+            <Image Source="Bildes1\3.png" Grid.Column="1" Grid.Row="5" VerticalAlignment="Top" Width="43"/>
+            <Image Source="Bildes1\3.png" Grid.Column="2" Grid.Row="5" VerticalAlignment="Top" Width="43"/>
+            <Image Source="Bildes1\3.png" Grid.Column="3" Grid.Row="5" VerticalAlignment="Top" Width="43"/>
+            <TextBlock Text="=" Grid.Column="3" Grid.Row="3" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Text="480" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="5" Grid.Row="7"/>
+            <TextBlock Text="=" Grid.Column="4" Grid.Row="7" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Text="160" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="4" Grid.Row="3"/>
+            <TextBlock Text="=" Grid.Column="4" Grid.Row="5" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.RowSpan="2"/>
+            <TextBlock Text="360" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="5" Grid.Row="5" Grid.RowSpan="2"/>
+
+            <Image Source="Bildes1\2.png" Grid.Row="7" Grid.Column="0" />
+            <Image Source="Bildes1\2.png" Grid.Row="7" Grid.Column="1" />
+            <Image Source="Bildes1\2.png" Grid.Row="7" Grid.Column="2" />
+            <Image Source="Bildes1\2.png" Grid.Row="7" Grid.Column="3" />
+
+            <Image Source="Bildes1\4.png" Grid.Column="0" Grid.Row="8"/>
+            <Image Source="Bildes1\4.png" Grid.Column="1" Grid.Row="8"/>
+            <Image Source="Bildes1\4.png" Grid.Column="2" Grid.Row="8"/>
+            <Image Source="Bildes1\4.png" Grid.Column="3" Grid.Row="8"/>
+            <TextBlock Text="=" Grid.Column="4" Grid.Row="8" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Text="560" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="5" Grid.Row="8"/>
+        </Grid>
+
+        <Grid Width="300" Margin="670, 0, 100, 100" Name="gr4" Visibility="Hidden">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0,2*"/>
+                <ColumnDefinition Width="0,2*"/>
+                <ColumnDefinition Width="0,2*"/>
+                <ColumnDefinition Width="0,2*"/>
+                <ColumnDefinition Width="0,2*"/>
+                <ColumnDefinition Width="0,3*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0,2*"/>
+                <RowDefinition Height="0,2*"/>
+                <RowDefinition Height="0,2*"/>
+                <RowDefinition Height="0,2*"/>
+                <RowDefinition Height="0,2*"/>
+                <RowDefinition Height="0,2*"/>
+                <RowDefinition Height="0,2*"/>
+                <RowDefinition Height="0,2*"/>
+                <RowDefinition Height="0,2*"/>
+            </Grid.RowDefinitions>
+            <Image Source="Bildes1\4.png"/>
+            <Image Source="Bildes1\4.png" Grid.Column="1"/>
+            <TextBlock Text="=" Grid.Column="2" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+            <Image Source="Bildes1\1.png" Grid.Row="1" VerticalAlignment="Bottom" Width="43" Grid.RowSpan="2"/>
+            <Image Source="Bildes1\1.png" Grid.Row="1" Grid.Column="1" VerticalAlignment="Bottom" Width="43" Grid.RowSpan="2"/>
+            <Image Source="Bildes1\1.png" Grid.Row="1" Grid.Column="2" VerticalAlignment="Bottom" Width="43" Grid.RowSpan="2"/>
+            <Image Source="Bildes1\3.png" Grid.Row="1" VerticalAlignment="Top" Width="43" Grid.RowSpan="2"/>
+            <Image Source="Bildes1\3.png" Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" Width="43" Grid.RowSpan="2"/>
+            <Image Source="Bildes1\3.png" Grid.Row="1" Grid.Column="2" VerticalAlignment="Top" Width="43" Grid.RowSpan="2"/>
+            <TextBlock Text="=" Grid.Column="3" Grid.Row="1" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.RowSpan="2"/>
+            <TextBlock Text="80" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="3"/>
+            <TextBlock Text="160" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="4" Grid.Row="1" Grid.RowSpan="2"/>
+
+            <Image Source="Bildes1\2.png" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center"/>
+            <Image Source="Bildes1\2.png" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" />
+            <Image Source="Bildes1\2.png" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center"/>
+
+            <Image Source="Bildes1\4.png" Grid.Column="0" Grid.Row="4"/>
+            <Image Source="Bildes1\4.png" Grid.Column="1" Grid.Row="4"/>
+            <Image Source="Bildes1\4.png" Grid.Column="2" Grid.Row="4"/>
+            <TextBlock Text="=" Grid.Column="3" Grid.Row="4" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Text="400" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="4" Grid.Row="4"/>
+
+            <Image Source="Bildes1\1.png" Grid.Column="0" Grid.Row="5" VerticalAlignment="Bottom" Width="43" Grid.RowSpan="2"/>
+            <Image Source="Bildes1\1.png" Grid.Column="1" Grid.Row="5" VerticalAlignment="Bottom" Width="43" Grid.RowSpan="2"/>
+            <Image Source="Bildes1\1.png" Grid.Column="2" Grid.Row="5" VerticalAlignment="Bottom" Width="43" Grid.RowSpan="2"/>
+            <Image Source="Bildes1\1.png" Grid.Column="3" Grid.Row="5" VerticalAlignment="Bottom" Width="43" Grid.RowSpan="2"/>
+            <Image Source="Bildes1\3.png" Grid.Column="0" Grid.Row="5" VerticalAlignment="Top" Width="43"/>
+            <Image Source="Bildes1\3.png" Grid.Column="1" Grid.Row="5" VerticalAlignment="Top" Width="43"/>
+            <Image Source="Bildes1\3.png" Grid.Column="2" Grid.Row="5" VerticalAlignment="Top" Width="43"/>
+            <Image Source="Bildes1\3.png" Grid.Column="3" Grid.Row="5" VerticalAlignment="Top" Width="43"/>
+            <TextBlock Text="=" Grid.Column="3" Grid.Row="3" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Text="960" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="5" Grid.Row="7"/>
+            <TextBlock Text="=" Grid.Column="4" Grid.Row="7" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Text="320" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="4" Grid.Row="3"/>
+            <TextBlock Text="=" Grid.Column="4" Grid.Row="5" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.RowSpan="2"/>
+            <TextBlock Text="720" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="5" Grid.Row="5" Grid.RowSpan="2"/>
+
+            <Image Source="Bildes1\2.png" Grid.Row="7" Grid.Column="0" />
+            <Image Source="Bildes1\2.png" Grid.Row="7" Grid.Column="1" />
+            <Image Source="Bildes1\2.png" Grid.Row="7" Grid.Column="2" />
+            <Image Source="Bildes1\2.png" Grid.Row="7" Grid.Column="3" />
+
+            <Image Source="Bildes1\4.png" Grid.Column="0" Grid.Row="8"/>
+            <Image Source="Bildes1\4.png" Grid.Column="1" Grid.Row="8"/>
+            <Image Source="Bildes1\4.png" Grid.Column="2" Grid.Row="8"/>
+            <Image Source="Bildes1\4.png" Grid.Column="3" Grid.Row="8"/>
+            <TextBlock Text="=" Grid.Column="4" Grid.Row="8" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Text="1120" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="5" Grid.Row="8"/>
+        </Grid>
+        <TextBlock Name="lielais" Text="Diemžēl Tev beidzās nauda!" FontSize="80" FontWeight="Bold" Height="100" Margin="10,130,-10,288.6" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Gold" Visibility="Hidden" Background="DarkCyan"/>
+        <Button Margin="10,465,870,9.6" Content="Izvēlēties citu spēli" FontSize="20" Click="Button_Click_1" Background="Beige" FontWeight="Bold"/>
+    </Grid>
+</Window>
